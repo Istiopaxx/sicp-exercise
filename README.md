@@ -4,11 +4,12 @@ SICP EXERCISE 모음집
 - [원본 리드미](https://github.com/murry2018/wizardbook)
 
 ## 스터디 가이드
-매주 토요일 16시(KST)에 스터디가 있습니다.
+매주 토요일 16시(KST)
 
 - 지정된 분량을 읽고 문제를 풀어옵니다.
 - 각자 깃허브 리포지토리에 풀이를 올립니다.
 - 스터디 당일 문제-참여자 랜덤 매칭하여 해설합니다.
+- Google Meet을 이용해 매 주 원격 스터디 모임을 합니다.
 
 ### 스터디 교재
 **SICP(Structure and Interpretation of Computer Program) 2/E**
@@ -31,11 +32,14 @@ SICP EXERCISE 모음집
 
 ### 스터디 목표
 이 목표는 단지 그 주에 함께  살펴볼 진도일 뿐입니다. 개인의 역량이나 시간에 따라 더 진도를 나가도 좋습니다!
-- [ ] 9월 2주차: 서문 + 1.1절(@일요일 16시)
+- [x] 9월 2주차: 서문 + 1.1절(2021-09-12 16시)
 - [ ] 9월 3주차: 1.2절
 
 ## 스터디 참가자 일람
 - [@murry2018](https://github.com/murry2018/wizardbook)
+- [@nicksuh](https://github.com/nicksuh/SICP_exercises/)
+- [@KeisLuv5991](https://github.com/KeisLuv5991/SicpExercise)
 - [@fienestar](https://github.com/fienestar/sicp)
 - [@dsyun96](https://github.com/dsyun96/wizard-practice)
 - [@blurfx](https://github.com/blurfx/sicp)
+- [@rosqxkedrt](https://github.com/rosqxkedrt/sicp_study)
