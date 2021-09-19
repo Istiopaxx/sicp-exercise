@@ -3,13 +3,20 @@ SICP EXERCISE 모음집
 
 - [원본 리드미](https://github.com/murry2018/wizardbook)
 
-## 스터디 가이드
-매주 토요일 16시(KST)
+## 진행방식
 
 - 지정된 분량을 읽고 문제를 풀어옵니다.
 - 각자 깃허브 리포지토리에 풀이를 올립니다.
 - 스터디 당일 문제-참여자 랜덤 매칭하여 해설합니다.
-- Google Meet을 이용해 매 주 원격 스터디 모임을 합니다.
+
+## Scheme 설치
+
+- Sicp에선 프로그래밍 언어 LISP의 방언인 Scheme을 사용합니다. 그런데 Sicp에서 사용한 Scheme 버전이 오래되어 해당 환경의 실행기를 구하기 힘듭니다.
+- 따라서 LISP의 방언인 [Racket(설치링크)](https://download.racket-lang.org/)에서 Sicp버전의 Scheme 구현체를 이용하여 문제를 풀어봅니다. 
+- Racket을 설치하면, racket 실행기와 DrRacket 실행기, 그리고 racket용 패키지 매니저인 raco가 설치됩니다.
+- Racket이 설치된 폴더에 raco 실행파일도 같이 있습니다. PATH에 추가하고, 터미널에서 `raco pkg install racket-langserver`를 실행하여 패키지를 다운받습니다.
+- VSCODE를 키고, 익스텐션에서 [Magic Racket](https://marketplace.visualstudio.com/items?itemName=evzen-wybitul.magic-racket) 검색 후 install
+- 소스코드(.rkt) 최상단에 `#lang sicp`를 작성해주면 실행기가 자동으로 Sicp 버전으로 문법을 해석합니다. 
 
 ### 스터디 교재
 **SICP(Structure and Interpretation of Computer Program) 2/E**
