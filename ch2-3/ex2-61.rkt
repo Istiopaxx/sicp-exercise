@@ -13,9 +13,9 @@
         (else (element-of-set? x (cdr set)))))
 
 (define (adjoin-set x set)
-  (cond ((element-of-set? x set) set)
-        ((> x (car set)) (cons (car set) (adjoin-set x (cdr set))))
-        (else (cons x set))))
+  (cond ((> x (car set)) (cons (car set) (adjoin-set x (cdr set))))
+        ((< x (car set)) (cons x set))
+        (else set)))
 
 ; ==================================================
 ; Test.
