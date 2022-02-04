@@ -57,12 +57,10 @@
 
 (define (type-tag datum)
   (cond ((pair? datum) (car datum))
-        ((number? datum) 'scheme-number)
         (else (error "Bad tagged datum -- TYPE-TAG" datum))))
 
 (define (contents datum)
   (cond ((pair? datum) (cdr datum))
-        ((number? datum) datum)
         (else (error "Bad tagged datum -- CONTENTS" datum))))
 
 (define (apply-generic op . args)
@@ -251,7 +249,7 @@
 
 (define (install-coercion-package)
   (define (integer->rational n)
-    (make-rational (contents n) 1))
+    (make-rational n 1))
   (define (rational->real n)
     (make-real (/ (numer n) (denom n))))
   (define (real->complex n)
