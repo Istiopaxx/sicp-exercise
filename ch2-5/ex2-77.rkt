@@ -193,6 +193,16 @@
 (install-polar-package)
 (install-rectangular-package)
 
+; Define real-part, imag-part, magnitude, angle apply function.
+(define (real-part z)
+  (apply-generic 'real-part z))
+(define (imag-part z)
+  (apply-generic 'imag-part z))
+(define (magnitude z)
+  (apply-generic 'magnitude z))
+(define (angle z)
+  (apply-generic 'angle z))
+
 
 
 ; ==================================================
@@ -204,14 +214,6 @@
     ((get 'make-from-real-imag 'rectangular) x y))
   (define (make-from-mag-ang r a)
     ((get 'make-from-mag-ang 'polar) r a))
-  (define (real-part z)
-    (apply-generic 'real-part z))
-  (define (imag-part z)
-    (apply-generic 'imag-part z))
-  (define (magnitude z)
-    (apply-generic 'magnitude z))
-  (define (angle z)
-    (apply-generic 'angle z))
   ;; internal procedures
   (define (add-complex z1 z2)
     (make-from-real-imag (+ (real-part z1) (real-part z2))
@@ -261,8 +263,6 @@
 (define (sub x y) (apply-generic 'sub x y))
 (define (mul x y) (apply-generic 'mul x y))
 (define (div x y) (apply-generic 'div x y))
-; Define magnitude apply function.
-(define (magnitude x) (apply-generic 'magnitude x))
 
 
 (define z (make-complex-from-real-imag 3 4))
